@@ -1,0 +1,14 @@
+.data-options-wrapper {
+    @include base-flex-column;
+
+    .data-option-wrapper {
+        @include base-flex-row;
+        // justify-content: space-between;
+        .text {
+            margin: 5px 5px;
+        }
+
+    }
+
+
+}

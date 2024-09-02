@@ -1,0 +1,40 @@
+.auth-page-wrapper {
+    // display: grid;
+    // grid-template-columns: 2fr 3fr;
+    @include base-flex-row;
+    justify-content: flex-start;
+    // flex-wrap: wrap;
+
+    // height: calc(100vh - 200px);
+  
+    .left-column {
+      height: 100%;
+      width: 350px;
+    }
+  
+    .right-column {
+      @include base-flex-column;
+      justify-content: center;
+      align-items: center;
+      background-color: $offwhite;
+      padding: 0px 30px;
+    }
+  }
+
+  @media (max-width: 550px) { 
+    .auth-page-wrapper {
+      @include base-flex-column;
+      flex-wrap: nowrap;
+      
+
+      .left-column {
+        display: none;
+
+        }  
+        .right-column {
+          margin-top: 50px;
+        }
+    }
+  }
+
+  

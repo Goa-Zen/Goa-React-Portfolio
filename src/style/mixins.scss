@@ -1,0 +1,121 @@
+@mixin base-btn {
+    cursor: pointer;
+    height: 42px;
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.5 ease-in-out;
+    background-color: $dark-teal;
+    color: $offwhite;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $teal;
+        color: $charcoal;
+    }
+}
+
+@mixin input-element {
+    input {
+      font-family: "Titillium Web", sans-serif;
+      color: $charcoal;
+      padding: 5px 0px;
+      width: 100%;
+      border-top: 0px;
+      border-right: 0px;
+      border-left: 0px;
+      border-bottom: 1px solid $teal;
+      background-color: transparent;
+      transition: 0.5s all ease-in-out;
+      font-size: 1.1em;
+      margin-bottom: 21px;
+  
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $dark-teal;
+      }
+    }
+  }
+  @mixin textarea-element {
+    textarea {
+      border: 1px solid $teal;
+      background-color: transparent;
+      font-size: 1rem;
+      height: 100px;
+      outline: none;
+      padding: 10px;
+    }
+  }
+  @mixin select-element {
+    select {
+      border: 1px solid #ccc;
+      font-size: 0.8rem;
+      width: 100%;
+      border-radius: 3px;
+      overflow: hidden;
+      background-color: transparent;
+      outline: none;
+    }
+  }
+
+  @mixin link-warning() {
+    font-weight: 900;
+    color: $warning;
+    cursor: pointer;
+
+ }
+  @mixin base-grid() {
+     display: grid;
+     grid-gap: 21px;
+  }
+
+  @mixin base-flex-row() {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: row;
+
+ }
+ @mixin base-flex-column() {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+
+}
+
+@mixin base-background-image() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+// variables for other mixings
+
+$white: white;
+$dark-background: #6b717f;
+$teal: #26bfd4;
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $white;
+    color: $teal;
+  } @else {
+    background-color: $dark-background;
+    color: $white;
+  }
+}
+
+// SCSS Syntax
+// $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+// @each $name, $glyph in $icons {
+//   .icon-#{$name}:before {
+//     display: inline-block;
+//     font-family: "Icon Font";
+//     content: $glyph;
+//   }
+// }

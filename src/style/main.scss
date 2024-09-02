@@ -1,28 +1,34 @@
-html {
-    font-size: 62.5%; // 1rem is 10px
-}
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./base.scss";
+@import "./button.scss";
+@import "./grid.scss";
+@import "./navigation/navigation.scss";
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
-}
+@import "./pages/auth.scss";
+@import "./pages/contact.scss";
+@import "./pages/about.scss";
 
-body {
-    overflow-x: hidden;
-    font-weight: normal;
+@import "./portfolio/portfolio.scss";
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-}
+@import "./portfolio/portfolio-manager.scss";
+@import "./portfolio/portfolio-sidebar.scss";
+@import "./portfolio/portfolio-detail.scss";
 
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
+@import "./form/form-wrapper.scss";
+// @import "./portfolio-form.scss";
+// @import "./form.scss";
+// @import "./blog-form.scss";
+
+@import "./blog/blog.scss";
+@import "./blog/blog-item.scss";
+
+@import "./loader.scss";
+
+@import "./modals.scss";
+@import "./react-draft-wysiwyg.scss";
+@import "./rich-text-editor.scss";
+
+@import "./menu/filter-menu.scss";
+@import "./statistics/data-options.scss";
+@import "./table/table-styles-one.scss";

@@ -1,5 +1,4 @@
-# React/Redux/Router Starter Project
+## 17.16. Installing and Configuring Font Awesome in React
+Para instalar awesome en el sistema
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
-
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+npm i @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
