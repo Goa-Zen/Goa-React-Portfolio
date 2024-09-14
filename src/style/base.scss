@@ -1,15 +1,12 @@
-body {
-    margin: 0px;
-    font-family: 'Titillium Web', sans-serif;
-}
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10px 50px;
     height: calc(100vh - 54px);
+    font-family: 'Titillium Web', sans-serif;
 }
 
 a {
     cursor: pointer;
-  }
+}
