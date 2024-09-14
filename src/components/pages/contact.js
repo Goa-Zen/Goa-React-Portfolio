@@ -1,18 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EmailSubmit from "../contact/email-submit";
-// import Map from "../contact/contact-map";
+import BackgroundImage from "../images/background-image-rc";
 
 
 export default function() {
   return (
     <div className="contact-page-wrapper">
 
-      <div className="left-column">
-        <EmailSubmit />
+     
 
-        {/* <Map /> */}
-      </div>
+      <BackgroundImage 
+          collection="contact" 
+          imgIndex="0" 
+          className="left-column"
+          allowClick="false"
+          />
+   
 
       <div className="right-column">
         <div className="contact-bullet-points">
@@ -39,8 +42,9 @@ export default function() {
 
             <div className="text">Bizkaia, Spain</div>
           </div>
-        </div>
 
+
+        </div>
 
       </div>
     </div>

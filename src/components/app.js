@@ -17,9 +17,7 @@ import PortfolioManager from "./pages/portfolio-manager";
 import Auth from "./pages/auth";
 import NoMatch from "./pages/no-match";
 import Icons from "../helpers/icons";
-import Statistics from './pages/statistics';
-import DataSubgrupsGetAll from './statistics/data-subgroups-get-all';
-import DataIndicatorsGetAll from './statistics/data-indicators-get-all';
+
 
 
 export default class App extends Component {
@@ -127,31 +125,8 @@ export default class App extends Component {
               />
             <Route key="about-me" path="/about-me" component={About} />
             <Route key="contact" path="/contact" component={Contact} />
-            <Route 
-            exact
-              key="statistics" 
-              path="/statistics" 
-              component={Statistics} 
-
-              />
-              <Route
-                path="/statistics/subgroups/:slug"
-                render={props => (
-                  <DataSubgrupsGetAll
-                    {...props}
-                    
-                  />
-                )}
-              />    
-              <Route
-                path="/statistics/indicators/:slug"
-                render={props => (
-                  <DataIndicatorsGetAll
-                    {...props}
-                    
-                  />
-                )}
-              />                  
+            
+              
             {/* <Route key="blog" path="/blog" component={Blog} /> */}
             <Route
                 key="blog"

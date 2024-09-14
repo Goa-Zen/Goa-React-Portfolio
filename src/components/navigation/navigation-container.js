@@ -70,11 +70,7 @@ const NavigationComponent = (props) => {
                         Blog
                     </NavLink>
                 </div>    
-                <div className="nav-link-wrapper">
-                    <NavLink to="/statistics" activeClassName="nav-link-active">
-                        Statistics
-                    </NavLink>
-                </div>                                 
+                                
                 {/* { dynamicLink("/blog", "Blog")  } */}
                 {/* { props.loggedInStatus === "LOGGED_IN" ? dynamicLink("/blog", "Blog") : null}    */}
                 {props.loggedInStatus === "LOGGED_IN" ? dynamicLink("/portfolio-manager", "Portfolio Manager") : null}           
