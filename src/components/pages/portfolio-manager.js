@@ -59,7 +59,7 @@ export default class PortfolioManager extends Component {
     .get('https://goa.devcamp.space/portfolio/portfolio_items')// ojjo , opcionales lo de ordenar, pero así la reciente saldrá arriba automaticamente
     .then(response => {
       // handle success
-      console.log("given response" , response);
+      // console.log("given response" , response);
       this.setState ({
         portfolioItems: [...response.data.portfolio_items]
       });

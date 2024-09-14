@@ -28,7 +28,7 @@ export default class PortfolioContainer extends Component {
   } 
 
   handleFilter(filterInput) {
-    console.table("start data" , this.state.startData);
+    // console.table("start data" , this.state.startData);
       this.setState({
           // data: this.state.data.filter(item => {
           //   return item.category === filterInput;
@@ -49,7 +49,7 @@ export default class PortfolioContainer extends Component {
     axios
     .get('https://goa.devcamp.space/portfolio/portfolio_items')// ojjo not changed del de Jordan; el link es devcamp.space')// ojjo not changed del de Jordan; el link es devcamp.space
     .then(response => {
-      console.log("given response" , response);
+      // console.log("given response" , response);
       this.setState ({
         data: response.data.portfolio_items,
         startData: response.data.portfolio_items

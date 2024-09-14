@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
 
-// import PortfolioContainer from "./portfolio/portfolio-container";
-
 import NavigationContainer from "./navigation/navigation-container";
 
 import Home from "./pages/home";
@@ -97,11 +95,6 @@ export default class App extends Component {
     // this.getPortfolioItems();
     return (
       <div className='container'>
-        {/* { this.state.loggedInStatus } */}
-        {/* <FontAwesomeIcon icon="fa-flag" /> */}
-
-        {/* <h1>Silvia Changed React Redux Router</h1>
-        <div>{moment().format('MMMM Do YYYY, h:mm:ss a')}</div> */}
 
         <Router>
           <NavigationContainer 
@@ -114,7 +107,6 @@ export default class App extends Component {
             <Route 
               key="auth"
               path="/auth" 
-              // component={Auth} 
               render={props => (
                   <Auth
                     {...props}
@@ -126,8 +118,6 @@ export default class App extends Component {
             <Route key="about-me" path="/about-me" component={About} />
             <Route key="contact" path="/contact" component={Contact} />
             
-              
-            {/* <Route key="blog" path="/blog" component={Blog} /> */}
             <Route
                 key="blog"
                 path="/blog"
@@ -147,13 +137,7 @@ export default class App extends Component {
                   />
                 )}
               />
-            {/* <Route 
-              exact
-              path="/b/:slug" 
-              component={BlogDetail} 
 
-            /> */}
-            {/* <Route path="/portfolio-manager" component={PortfolioManager} /> */}
             { this.state.loggedInStatus === "LOGGED_IN" ? this.authorizedPages() : null}
             
             <Route

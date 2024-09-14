@@ -38,7 +38,7 @@ export default class BlogDetail extends Component {
     });
   }
   handleEditClick() {
-    console.log("handle edit clicked");
+    // console.log("handle edit clicked");
     this.setState({ editMode: true });
   }
 

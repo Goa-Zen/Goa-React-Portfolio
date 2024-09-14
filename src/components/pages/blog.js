@@ -75,7 +75,7 @@ class Blog extends Component {
   }
 
   getBlogItems() {
-    console.log("before updating currentPage", this.state.currentPage);
+    // console.log("before updating currentPage", this.state.currentPage);
     this.setState({
       currentPage: this.state.currentPage + 1
     });
@@ -88,8 +88,8 @@ class Blog extends Component {
         }
       )
       .then(response => {
-        console.log("after updating currentPage in response", this.state.currentPage);
-        console.log("gettting data from Blog", response.data);
+        // console.log("after updating currentPage in response", this.state.currentPage);
+        // console.log("gettting data from Blog", response.data);
         this.setState({
           blogItems: this.state.blogItems.concat(response.data.portfolio_blogs),
           totalCount: response.data.meta.total_records,

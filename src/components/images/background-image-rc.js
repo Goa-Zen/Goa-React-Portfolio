@@ -18,7 +18,7 @@ export default class BackgroundImage extends Component {
             images:  this.selectGallery () 
           
         };
-        console.log(this.state.images);
+        // console.log(this.state.images);
         this.handleMouseEnter = this.handleMouseEnter.bind(this);
     }    
     
@@ -43,7 +43,7 @@ export default class BackgroundImage extends Component {
         }else {
             this.setState({imageIndex: 0}) ;
         }
-        console.log("We are calling the imageIndex y images.length " , imageIndex, images.length );
+        // console.log("We are calling the imageIndex y images.length " , imageIndex, images.length );
 
     }
     componentDidMount () {
@@ -52,7 +52,7 @@ export default class BackgroundImage extends Component {
     }
     render() {
 
-        console.log("We are calling the render " , this.state.imageIndex );
+        // console.log("We are calling the render " , this.state.imageIndex );
         let title =this.state.allowClick === "true" ? "Click on me" : null;
         return (
 
