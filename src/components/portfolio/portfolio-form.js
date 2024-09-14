@@ -4,7 +4,7 @@ import axios from "axios";
 import DropzoneComponent from "react-dropzone-component";
 
 // import "../../../node_modules/react-dropzone-component/styles/filepicker.css";
-import "../../../node_modules/dropzone/dist/min/dropzone.min.css";
+// import "../../../node_modules/dropzone/dist/min/dropzone.min.css";
 
 export default class PortfolioForm extends Component {
   constructor(props) {
