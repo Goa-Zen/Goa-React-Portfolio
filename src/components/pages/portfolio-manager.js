@@ -30,14 +30,15 @@ export default class PortfolioManager extends Component {
   }
 
   handleEditClick(portfolioItem) {
-    // console.log("Estoy en el handle Edit");
     this.setState({
       portfolioToEdit: portfolioItem
     });
   }
+
   handleEditFormSubmission() {
     this.getPortfolioItems();
   }
+
   handleNewFormSubmission(portfolioItem) {
     // TODO
     // update the portfolioItems state
@@ -67,10 +68,7 @@ export default class PortfolioManager extends Component {
     .catch(error => {
       // handle error
       console.log(error);
-    })
-    // .finally(function () {
-    //   // always executed
-    // });
+    });
   }
   handleDeleteClick(portfolioItem) {
     // console.log("HandleDeleteClick" , portfolioItem);
