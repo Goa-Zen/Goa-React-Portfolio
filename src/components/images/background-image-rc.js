@@ -47,12 +47,7 @@ export default class BackgroundImage extends Component {
 
     }
     componentDidMount () {
-            // this.setState({
-            //     images: this.selectGallery()
-            // }) ;
-        //   this.props.handleGalleryState(this.state.imageIndex);
-
-          console.log("We are calling the componentDidMount " , this.state.imageIndex );
+        //  console.log("We are calling the componentDidMount " , this.state.imageIndex );
        
     }
     render() {

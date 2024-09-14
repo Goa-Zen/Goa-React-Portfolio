@@ -42,7 +42,7 @@ export default class BlogModal extends Component {
         <BlogForm
           handleSuccessfulFormSubmission={this.handleSuccessfulFormSubmission}
         />
-        {/* <h1>I'm in a modal!</h1> */}
+        
       </ReactModal>
     );
   }

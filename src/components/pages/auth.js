@@ -28,9 +28,7 @@ export default class Auth extends Component {
           className="left-column"
           allowClick="false"
           />
-
-      {/* </div> */}
-
+          
         <div className="right-column">
             <Login
             handleSuccessfulAuth={this.handleSuccessfulAuth}

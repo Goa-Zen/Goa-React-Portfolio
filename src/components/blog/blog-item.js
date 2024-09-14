@@ -18,7 +18,7 @@ const BlogItem = props => {
     <div className="blog-item-wrapper">
       <div className="blog-item-head">
         <div className="image-wrapper" >
-          <img src={ featured_image_url !== null ? featured_image_url : ProfileImageSwift} />
+          <img alt="imagen-blog" src={ featured_image_url !== null ? featured_image_url : ProfileImageSwift} />
         </div>
         <div>
           <Link to={`/b/${id}`}>

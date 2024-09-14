@@ -57,11 +57,10 @@ export default class PortfolioContainer extends Component {
     })
     .catch(error => {
       console.log(error);
-    })
+    });
   }
 
   renderOut = () => {
-    // this.getPortfolioItems();
     return (
       
       <div className="portfolio-items-container">

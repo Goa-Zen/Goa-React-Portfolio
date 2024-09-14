@@ -39,7 +39,7 @@ const NavigationComponent = (props) => {
         <div className="nav-wrapper">
             <div className="left-side">
                 <div className="image-wrapper" >
-                        <img src={ProfileImage} />
+                        <img alt="imagen" src={ProfileImage} />
                 </div>                
             </div>
             
@@ -89,12 +89,11 @@ const NavigationComponent = (props) => {
                 {props.loggedInStatus === "LOGGED_IN" ? (
                     <a onClick={handleSignOut}>
                         <FontAwesomeIcon icon="sign-out-alt" />
-                        {/* <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-bracket" /> */}
                     </a>
                 ) : 
                 
                     <NavLink to="/auth" activeClassName="nav-link-active">
-                        <FontAwesomeIcon icon="fa-flag" />
+                        <FontAwesomeIcon icon="flag" />
                     </NavLink>
                 }  
   

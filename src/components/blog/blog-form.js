@@ -83,7 +83,6 @@ export default class BlogForm extends Component {
       addedfile: file => this.setState({ featured_image: file })
     };
   }
-// --_--
 
   handleRichTextEditorChange(content) {
     this.setState({ content });
@@ -101,8 +100,7 @@ export default class BlogForm extends Component {
         "portfolio_blog[featured_image]",
         this.state.featured_image
       );
-    }
-
+    };
     return formData;
   }
 
@@ -134,11 +132,7 @@ export default class BlogForm extends Component {
           this.props.handleSuccessfulFormSubmission(
             response.data.portfolio_blog
           );
-        }
-        // this.props.handleSuccessfulFormSubmission(
-        //   response.data.portfolio_blog
-        // );
-
+        };
       })
       .catch(error => {
         console.log("handleSubmit for blog error", error);
@@ -189,7 +183,7 @@ export default class BlogForm extends Component {
         <div className="image-uploaders">
         {this.props.editMode && this.props.blog.featured_image_url ? (
             <div className="image-upload-wrapper">
-              <img src={this.props.blog.featured_image_url} />
+              <img alt="image" src={this.props.blog.featured_image_url} />
 
               <div className="image-removal-link">
                 <a onClick={() => this.deleteImage("featured_image")}>

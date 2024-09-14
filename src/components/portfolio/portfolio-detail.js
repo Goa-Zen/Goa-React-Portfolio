@@ -63,7 +63,7 @@ export default class PortfolioDetail extends Component {
       </div>
         
         <div className="banner" style={bannerStyles}>
-          <img src={logo_url} style={logoStyles} />
+          <img alt="portfolio-logo" src={logo_url} style={logoStyles} />
         </div>
 
         <div className="portfolio-detail-description-wrapper">
