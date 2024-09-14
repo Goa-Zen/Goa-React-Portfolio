@@ -78,13 +78,11 @@ export default class PortfolioForm extends Component {
     .delete(
       `https://api.devcamp.space/portfolio/delete-portfolio-image/${this.state.id}?image_type=${imageType}`,
       { withCredentials: true }
-    )
-    .then(response => {
+    ).then(response => {
       this.setState({
         [`${imageType}_url`]: ""
       });
-    })
-    .catch(error => {
+    }).catch(error => {
       console.log("deleteImage error", error);
     });
   }
@@ -94,7 +92,7 @@ export default class PortfolioForm extends Component {
       iconFiletypes: [".jpg", ".png"],
       showFiletypeIcon: true,
       postUrl: "https://httpbin.org/post"
-    }
+    };
   }
 
   djsConfig() {
